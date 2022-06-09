@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTHclinic</title>
+    <link rel="SHORTCUT ICON" HREF="./assets/Kho_Anh/heartbeat2.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div id="main">
+        <!-- Bat dau : header -->
+        <div id="header">
+            <div class="home">
+                <a href="./index.html">
+                    PTH Clinic
+                </a>
+            </div>
+            <!-- Bat dau : nav -->
+            <ul id="nav">
+                <li><a href="./Gioi_Thieu.html">Giới Thiệu</a></li>
+                <li><a href="./Bac_Si.html">Bác Sĩ</a></li>
+                <li><a href="./Co_So_Vat_Chat.html">Cơ Sở Vật Chất</a></li>
+                <li>
+                    <a href="#">Thêm</a>
+                    <ul class="subnav">
+                        <li><a href="./Tuyen_Dung.html">Tuyển Dụng</a></li>
+                        <!-- <li><a href="/Kinh_Nghiem.html">Kinh Nghiệm</a></li> -->
+                        <li><a href="./Chat_Luong.html">Chất Lượng</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Ket thuc : nav-->
+
+            <!-- Bat dau : nut dat lich -->
+            <div id="mobile-dat-lich" class="dat-lich-ngay"><a href="./index.html#dat-lich-kham-ngay">
+                Đặt Lịch Ngay
+            </a></div>
+            <!-- Ket thuc : nut dat lich -->
+
+        <div id="mobile-menu" class="mobile-menu-btn">
+            <img src="./assets/Kho_Anh/menu.png" alt="button menu">
+        </div>
+
+        </div>
+        <!-- Ket thuc : header -->
+
+        <!-- Bat dau : Content -->
+        <div class="khung">
+            <div class="spinner-box">
+                <div class="solar-system">
+                    <div class="earth-orbit orbit">
+                        <div class="planet earth"></div>
+                        <div class="venus-orbit orbit">
+                            <div class="planet venus">     
+                            </div>
+                            <div class="mercury-orbit orbit">
+                                <div class="planet mercury"></div>
+                                <div class="sun"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Thông Tin Tuyển Dụng</h2>
+                <p> Liên hệ gmail: pthclinic.tuyendung@gmail.com</p>
+            </div>
+
+        </div>
+        <!-- Ket thuc : Content -->
+        
+        <!-- Bat dau : Footer -->
+        <div class="footer">
+            <div class="contact">
+                <div class="thuong-hieu">
+                    <a href="">
+                        PTH Clinic
+                    </a>
+                </div>
+                <div class="lien-he">
+                    <img src="./assets/Kho_Anh/email-5-256.png" alt="email" class="icon-lien-he">
+                    <p>
+                        pthclinic.suport@gmail.com
+                    </p>
+                </div>
+                <div class="lien-he">
+                    <img src="./assets/Kho_Anh/phone-68-256.png" alt="phone" class="icon-lien-he">
+                    <p>
+                        +84 12 06 2000
+                    </p>
+                </div>
+                <div class="lien-he">
+                    <img src="./assets/Kho_Anh/map-marker-2-256.png" alt="dia-chi" class="icon-lien-he">
+                    <p>
+                        84 Nguyễn Lương Bằng, Quận Liên Chiểu, Thành phố Đà Nẵng.
+                    </p>
+                </div>
+                <div class="lien-he">
+                    <img  src="./assets/Kho_Anh/today-256.png" alt="Lịch" class="icon-lien-he">
+                    <p>Mở Cửa: 7:30 ~ 18:30</p>
+                </div>
+            </div>
+            <div class="social-list">
+                <img src="./assets/Kho_Anh/Doctor-amico.png" alt="bac-si" class="anh-lien-he">
+                <a href="https://twitter.com/?lang=vi">
+                    <img src="./assets/Kho_Anh/twitter-256.png" alt="twitter" class="icon-social">
+                </a>
+                <a href="https://www.tiktok.com/vi-VN/">
+                    <img src="./assets/Kho_Anh/tiktok-256.png" alt="tiktok" class="icon-social">
+                </a>
+                <a href="https://vi-vn.facebook.com/">
+                    <img src="./assets/Kho_Anh/facebook-7-256.png" alt="facebook" class="icon-social">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="./assets/Kho_Anh/instagram-256.png" alt="instagram" class="icon-social">
+                </a>
+            </div>
+        </div>
+        <!-- Ket thuc : Footer -->
+    </div>
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var nav = document.getElementById('nav');
+        var mobileDatlich = document.getElementById('mobile-dat-lich');
+        // mobile-menu nav mobile-dat-lich
+        
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === 50; 
+            if (isClosed) {
+                header.style.height = 'auto'; 
+                nav.style.display = 'block';
+                mobileDatlich.style.display = 'block';
+            } else {
+                header.style.height = '50px'; 
+                nav.style.display = 'none';
+                mobileDatlich.style.display = 'none';
+
+            }
+        }
+    </script>
+</body>
+</html>
